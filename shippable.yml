@@ -10,17 +10,13 @@ language: python
 python:
  - "2.7"
 
-# Environment Variables 
-#env:
-# - DB=postgresql
-
 # Run before the script
 before_script:
  - git clone https://github.com/sstephenson/bats.git
 
 # Jobs to test on the script
 script:
- - bats/bin/bats test/addition.bats
+ - bats/bin/bats test/
 
 # Notifications
 notifications:
