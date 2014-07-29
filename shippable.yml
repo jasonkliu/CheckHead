@@ -11,7 +11,7 @@ python:
  - "2.7"
 
 # Run before the script
-before_script:
+install:
  - git clone https://github.com/sstephenson/bats.git
 
 # Jobs to test on the script
